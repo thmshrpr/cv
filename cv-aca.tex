@@ -1,0 +1,296 @@
+%% Margins
+\voffset=-10.4mm
+\hoffset=-10.4mm
+
+\vsize=267mm
+\hsize=180mm
+\parindent=0pt
+
+%% Font Aliases
+\font\title = "Optima/B:Letter Case=Small Caps" at 24pt
+\font\main = "Optima" at 11pt
+\font\bf   = "Optima/B" at 11pt
+\font\it   = "Optima/I" at 11pt
+\font\sc = "Optima" at 12pt
+\font\tt = "Monaco" at 9pt 
+\font\tinyrm = "Optima" at 7pt
+\font\lllsize = "Optima" at 8pt
+\font\smallit = "Optima/I" at 8pt 
+
+
+%% Predefined strings
+\def\plus{\raise .5ex \hbox{\tinyrm +}}
+\def\plusplus{\raise .5ex \hbox{\tinyrm ++}}
+\def\LaTeX{%
+  L\kern-.36em           
+  {\setbox0=\hbox{T}%
+   \vbox to \ht0{\hbox{\lllsize A}\vss}}%
+  \kern-.15em
+  \TeX
+}
+
+%% Commands for organistion
+\def\cvsection#1{{\sc #1} \smallskip \hrule \medskip}
+\def\jobheader#1#2#3#4{\line{{\bf #1} \hfill #2}\line{#3 \hfill #4}}
+
+%% Don't hyphenate these words
+\hyphenation{OpenSolaris}
+
+%% Name
+\def\author{R Thomas Harper}
+
+%%%%% START OF DOCUMENT %%%%% 
+\main
+\footline{\it \author\ — Curriculum Vitæ \hfill Page \the\pageno}
+
+{\title \author}
+\hrule %%height 1 pt
+
+\smallskip
+d
+%% Contact Info
+\line{L \hfill +46 70-001 27 26}
+\line{113 59 Stockholm \hfill rtomharper@gmail.com}
+\line{Sweden           \hfill}
+
+\bigskip
+
+%% Education
+\cvsection{Education}
+\line{{\bf Doctor of Philosophy in Computer Science} \hfill Currently pursuing}
+\line{Oriel College, University of Oxford, Oxford, United Kingdom \hfill}
+\line{Supervised by Dr Ralf Hinze \hfill}
+\medskip
+\line{{\bf Master of Science in Computer Science} \hfill 2008}
+\line{St Anne's College, University of Oxford, Oxford, United Kingdom \hfill}
+\line{Dissertation: {\it Fusion on Haskell Unicode Strings} \hfill}
+\line{Supervised by Prof Oege de Moor \hfill}
+\medskip
+\line{{\bf Bachelor of Science {\it cum laude} in Computer Science}
+  \hfill 2004–2007}
+\line{Syracuse University, Syracuse, New York, United States\hfill}
+
+\bigskip
+
+%% Awards and Honours 
+\cvsection{Awards and Honours} 
+
+\line{National Society of Collegiate Scholars \hfill 2006}
+\line{Dean's Scholarship — Syracuse University \hfill 2004}
+\line{President's Scholarship — American University \hfill 2003}
+
+\bigskip
+
+%% Teaching Experience
+\cvsection{Teaching Experience}
+
+\jobheader{Demonstrator}{2008–Present}{Oxford University
+Computing Laboratory}{Oxford, United Kingdom}
+\smallskip
+
+\parindent=20pt
+\item{$\diamond$} Instruct undergraduate and graduate students in the
+concepts necessary to complete practical exercises.
+\item{$\diamond$} Provide one-on-one assistance to students as they
+complete practicals in a lab.
+\item{$\diamond$} Mark completed assignments and give feedback to students.
+\item{$\diamond$} Assist at Open Days and Access Days demonstrating
+the pedagogical language GeomLab.
+\parindent=0pt
+
+\smallskip
+
+\parindent=20pt
+\indent Courses Taught:
+\parindent=40pt
+\item{$\diamond$} Functional Programming
+\item{$\diamond$} Computational Linguistics
+\item{$\diamond$} Compilers
+\item{$\diamond$} Principles of Programming Languages
+\parindent=0pt
+
+\bigskip
+
+%% Research Interests
+\cvsection{Research Interests}
+
+My research focuses on functional programming.  I am interested in the
+design of functional algorithms and purely functional data structures.
+For my thesis, I am studying the use of fusion techniques to automatically
+remove intermediate data structures from recursive programs.  
+
+\bigskip
+
+\cvsection{Research Experience}
+
+\jobheader{Doctoral Research}{2008–Present}
+{Oxford University Computing Laboratory}{Oxford, United Kingdom}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Conduct research into using fusion as a program
+optimisation in functional programming languages. 
+\item{$\diamond$} Design and implement purely functional data
+structures in the Haskell programming language and adapt fusion
+techniques for them. 
+\item{$\diamond$} Use high level equational reasoning
+and core output from a compiler to evaluate lower-level implications of
+optimisation. 
+\item{$\diamond$} Develop benchmarking techniques to evaluate the efficacy of
+optimisations.
+\item{$\diamond$} Collaborate on papers relevant to this research.
+\item{$\diamond$} Present and publish results at relevant international conferences.
+\parindent=0pt
+
+\bigskip
+
+\jobheader{Master's Research}{2007–2008}
+{Oxford University Computing Laboratory}{Oxford, United Kingdom}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Designed and implemented a high-performance, unicode
+compliant string library
+in the Haskell programming language using a novel application of
+stream fusion.
+\item{$\diamond$} Examined GHC core language output to find and optimise
+low-level inefficiences.
+\item{$\diamond$} Created a functional, high-level interface for
+efficient code that exploited low-level data manipulation to achieve
+good performance.
+\item{$\diamond$} Demonstrated performance improvements quantitatively using benchmarks.
+\item{$\diamond$} Presented the results in a dissertation which earned a Distinction-level mark.
+\item{$\diamond$} Published the results and presented them at
+Implementation and Application of Functional Languages (IFL) 2009.
+
+\bigskip
+
+\jobheader{Research Aid}{June 2006–August 2006}
+{Air Force Research Lab/Rome Research Site}{Rome, New York, United States}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Conducted machine translation research for the
+Information Exploitation division.
+\item{$\diamond$} Evaluated research from a contracted company on
+statistical machine translation and documented the results. 
+\item{$\diamond$} Extended that research
+by creating an integrated statistical machine translation application
+with a graphical user interface. This application was
+proof-of-concept code for use in constructing similar products for
+government and military customers. 
+\item{$\diamond$} Helped organise the “Military and Security
+Applications of Evolutionary Computing” workshop for the Genetic and
+Evolutionary Computing Conference (GECCO) 2006.
+\parindent=0pt
+
+\bigskip
+
+%% Professional Experience
+\cvsection{Professional Experience}
+
+\jobheader{Summer of Code Participant}{June 2007–August 2007}{Google, Inc.}{}
+\medskip 
+
+\parindent=20pt
+\item{$\diamond$} Submitted a proposal titled “Porting Fast Fourier
+Transform Tools” which was accepted by the OpenSolaris project. 
+\item{$\diamond$} Under the supervision of a mentor from Sun Microsystems,
+Inc., optimised Mlucas, a Lucas-Lehmer primality
+tester. 
+\item{$\diamond$} Parallelised source code using OpenMP, achieving a high degree
+of speedup on Sun servers.  
+\item{$\diamond$} This became the most scalable Mersenne
+Prime verifier used by the Great Internet Mersenne Prime Search.
+\parindent=0pt
+
+\bigskip
+
+\jobheader{Information Systems Intern}{June 2005–September
+2005}{Anheuser-Busch, Inc.}{Baldwinsville, New York, United States}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Supported a 24/7/365 brewery as a member of the
+Information Systems department.  
+\item{$\diamond$} Provided end-user support for software, hardware, and
+network issues in production and office environments.  
+\item{$\diamond$} Performed maintenance on live process control systems. 
+\item{$\diamond$} Performed routine system maintenance on servers.  
+\item{$\diamond$} Assisted in a plant-wide upgrade of
+over 500 computers using remote administration and by managing
+contracted workers for hardware replacement.
+\parindent=0pt
+
+\bigskip
+
+%% Skills
+\cvsection{Skills} 
+
+{\bf Programming Languages} 
+
+Haskell, $x$86, Assembly, C, C\plusplus, C$\sharp$, Java,
+Lua, OCaml, Perl, Scala
+\parindent=0pt
+\medskip
+
+% {\bf System Software}
+
+% Fedora, FreeBSD, Mac OS X, MS-DOS, Microsoft Windows 9$x$, NT, ME,
+% 2000 (incl. Server), and XP, Sun Solaris, OpenMP, Qt, Visual C$\sharp$
+% \medskip
+
+% {\bf Professional Software}
+
+% Adobe Creative Suite, \LaTeX, Microsoft Office, Plain
+% \TeX, QuickBooks, R \medskip
+
+{\bf Languages}
+
+Native English, Fluent Spanish, Intermediate Icelandic, Irish and
+Welsh
+
+\bigskip
+
+%% References
+
+\cvsection{References}
+
+The following persons have submitted letters of references on my
+behalf:
+
+\smallskip
+
+\settabs 2 \columns
+\+ Ralf Hinze                         & Irina Voiculescu                        \cr
+\+ Reader                             & Departmental Lecturer                   \cr
+\+ Oxford Computing Laboratory        & Oxford Computing Laboratory             \cr
+\+ Wolfson Building                   & Wolfson Building                        \cr
+\+ Parks Road                         & Parks Road                              \cr
+\+ Oxford                             & Oxford                                  \cr
+\+ OX1 3QD                            & OX1 3QD                                 \cr
+\+ +44 (0)1865 610 700                & +44 (0)1865 283 501                     \cr
+\+ ralf.hinze@comlab.ox.ac.uk         & irina.voiculescu@comlab.ox.ac.uk        \cr
+
+\bigskip
+
+%% Grants Awarded
+
+%% Publications
+
+\cvsection{Publications}
+
+\hangindent=20pt
+Harper, Thomas. Stream fusion on Haskell Unicode strings. In {\it
+Implementation and Application of Functional Languages},
+2009. Springer-Verlag. To appear.
+
+%% Conference Presentations
+
+%% Professional Activities
+
+%% Professional Affiliations
+
+%% Teaching Interests
+
+\bye

@@ -1,0 +1,403 @@
+% !TEX encoding = UTF-8 Unicode
+%% Margins
+\voffset=-10.4mm
+\hoffset=-10.4mm
+
+\vsize=267mm
+\hsize=180mm
+\parindent=0pt
+
+%% Font Aliases
+% \font\title = "Garamond Premier Pro/B" at 24pt
+% \font\main = "Garamond Premier Pro" at 11pt
+% \font\bf   = "Garamond Premier Pro/B" at 11pt
+% \font\it  = "Garamond Premier Pro/I" at 11pt
+% \font\sc = "Garamond Premier Pro/B" at 14pt
+% \font\tt = "Monaco" at 9pt 
+% \font\tinyrm = "Garamond Premier Pro" at 7pt
+% \font\lllsize = "Garamond Premier Pro" at 8pt
+% \font\smallit = "Garamond Premier Pro/I" at 8pt 
+
+%% Font Aliases
+\font\title = "Optima/B" at 24pt
+\font\main = "Optima" at 11pt
+\font\bf   = "Optima/B" at 11pt
+\font\it   = "Optima/I" at 11pt
+\font\sc = "Optima" at 12pt
+\font\tt = "Monaco" at 9pt 
+\font\tinyrm = "Optima" at 7pt
+\font\lllsize = "Optima" at 8pt
+\font\smallit = "Optima/I" at 8pt 
+
+
+%% Predefined strings
+\def\plus{\raise .5ex \hbox{\tinyrm +}}
+\def\plusplus{\raise .4ex \hbox{\tinyrm ++}}
+\def\LaTeX{%
+  L\kern-.36em           
+  {\setbox0=\hbox{T}%
+   \vbox to \ht0{\hbox{\lllsize A}\vss}}%
+  \kern-.15em
+  \TeX
+}
+
+%% Commands for organization
+\def\cvsection#1{{\sc #1} \smallskip \hrule \medskip}
+\def\jobheader#1#2#3#4{\line{{\bf #1} \hfill #2}\line{#3 \hfill #4}}
+
+%% Don't hyphenate these words
+\hyphenation{OpenSolaris}
+
+%% Name
+\def\author{Thomas Harper}
+
+%%%%% START OF DOCUMENT %%%%% 
+\main
+\footline{\it \author\ — Curriculum Vitæ \hfill Page \the\pageno}
+
+{\title \author}
+\hrule %%height 1 pt
+
+\smallskip
+
+%% Contact Info
+\line{Långhalsvägen 11   \hfill +46 70 281 46 76}
+\line{120 50 Årsta       \hfill {\tt rtomharper@gmail.com}}
+\line{Sweden             \hfill {\tt linkedin.com/in/thomasharper0/}}
+
+\bigskip
+
+%% Profile
+\cvsection{Profile}
+Software engineer currently working in data infrastructure and customer data privacy at Spotify. I develop tools and infrastructure for ensuring customer data privacy in compliance with the EU General Data Protection Regulation for both batch and realtime applications. I have also worked on high-volume event delivery as well as scheduling and orchestration. Previously, I worked both professionally and in a research capacity in functional programming using Erlang and Haskell. Broadly speaking, I am interested in building my career as an engineer and am especially but not exclusively interested in applications of functional programming. 
+
+\bigskip
+
+%% Education
+\cvsection{Education}
+\line{{\bf Doctor of Philosophy in Computer Science} \hfill 2014}
+\line{Oriel College, University of Oxford, Oxford, United Kingdom \hfill}
+\line{Dissertation: {\it Theory and Practice of Shortcut Fusion} \hfill}
+\line{Supervised by Prof Ralf Hinze \hfill}
+\medskip
+\line{{\bf Master of Science in Computer Science} \hfill 2008}
+\line{St Anne's College, University of Oxford, Oxford, United Kingdom \hfill}
+\line{Dissertation: {\it Fusion on Haskell Unicode Strings} \hfill}
+\line{Supervised by Prof Oege de Moor \hfill}
+\medskip
+\line{{\bf Bachelor of Science {\it cum laude} in Computer Science}
+  \hfill 2007}
+\line{Syracuse University, Syracuse, New York, United States\hfill}
+
+\bigskip
+
+%% Skills
+\cvsection{Skills}
+
+{\bf Programming Languages} 
+\parindent=20pt
+\item{$\diamond$} Extensive experience with Java (including Java 8), Erlang
+\item{$\diamond$} Extensive research experience with Haskell
+\item{$\diamond$} Some experience with Python, Scala
+\item{$\diamond$} Basic familiarity with bash scripting, C
+\parindent=0pt
+
+\medskip
+
+{\bf Other Development Tools and Technologies} 
+\parindent=20pt
+\item{$\diamond$} Extensive experience with Google Cloud Platform, basic experience on Amazon Web Services
+\item{$\diamond$} Microservices: Apollo, an open-source Java framework
+\item{$\diamond$} Databases: Cassandra, Cloud Spanner, Cloud BigTable, PostgreSQL
+\item{$\diamond$} Distributed data processing: Scio (Cloud Dataflow), BigQuery, MapReduce (Hadoop)
+\item{$\diamond$} Message queues: RabbitMQ, Kafka, Cloud PubSub
+\item{$\diamond$} Configuration and deployment: Puppet, Jenkins
+\item{$\diamond$} Data serialisation: Avro, JSON, Protobuf
+\parindent=0pt
+
+\medskip
+
+{\bf Languages}
+
+Native English, Fluent Swedish, Fluent Spanish, Conversational Icelandic, Elementary Mandarin
+
+\bigskip
+
+%% Experience
+\cvsection{Experience}
+\jobheader{Lead Engineer, Data Infrastructure}{2015—Present}{Spotify AB}{Stockholm, Sweden}
+\smallskip
+Spotify is a leading online music-streaming service with 180 million active users in 65 markets 
+worldwide with mobile and desktop applications. All roles included operational responsibilities and on-call duty rotations.
+\smallskip
+{\it Data Privacy Infrastructure} (current team)
+\parindent=20pt
+\item{$\diamond$} Defined Spotify's strategy for dealing with the European Union's General Data Protection Regulation, using per-user, centrally managed encryption keys to encrypt all personal data.
+\item{$\diamond$} Formed and lead the team that built a key management system that provides realtime key derivation and issuing in Java, using Cassandra to provide global replication to three different sites on three different continents.
+\item{$\diamond$} Wrote clients and encryption/decryption libraries for use in realtime microservices as well as batch processing on Cloud Dataflow, using either Java (Apache Beam) or Scala (Scio, an open-source implementation of Beam written and maintained at Spotify).
+\item{$\diamond$} Automate the encryption and decryption of data on analysis platforms to hide such complexity from internal customers.
+\item{$\diamond$} Continuously work to optimise these solutions to decrease overhead and reduce the associated costs incurred from cloud resource usage.
+\item{$\diamond$} Evaluate technologies from Google to replace non-cloud products currently in use.
+\parindent=0pt
+
+{\it Event Delivery}
+\parindent=20pt
+\item{$\diamond$} Migrated from a cross-site, Kafka-based event delivery system to a Google Cloud-based system using Cloud PubSub that processes over 2 million messages per second and is responsible for collection, deduplication, and batching of events.
+\item{$\diamond$} Automated the setup and teardown of all infrastructure associated with delivering a given event type, allowing other developers and analysts at Spotify to declare new event types in YAML files and automatically create all necessary infrastructure within 1 hour. 
+\item{$\diamond$} Regularly monitored and improved scalability metrics as demand grew with respect to number of event types and total event volume.
+\parindent=0pt
+
+{\it Scheduling and Orchestration}
+\parindent=20pt
+\item{$\diamond$} Developed and maintained Luigi, an open-source job orchestration framework in Python.
+\item{$\diamond$} Participated in the initial stages of the data infrastructure migration to Google Cloud Platform, including meetings with teams at Google to set requirements and strategy.
+\item{$\diamond$} Helped build the next-generation scheduling platform at Spotify in Java using Kubernetes to run user-defined Docker images and data jobs executed on Hadoop and Cloud Dataflow.
+\item{$\diamond$} Lead the project to make data infrastructure and royalty reporting compliant with IT General Controls as part of Spotify's Sarbanes-Oxley compliance. 
+\parindent=0pt
+
+
+\bigskip
+
+\jobheader{Deputy Development Manager}{2014—2015}{Klarna AB}{Stockholm, Sweden}
+\smallskip
+Klarna is an e-commerce company active in Europe and the US that provides credit-based
+payment options to customers on participating online stores with no sign-up using realtime 
+credit and fraud decisions.
+\smallskip
+\parindent=20pt
+\item{$\diamond$} Line manager for the customer identification team.
+\item{$\diamond$} Responsible for the delivery and development of a five-person team.
+\parindent=0pt
+
+
+\bigskip
+
+\jobheader{Developer}{2012—2014}{Klarna AB}{Stockholm, Sweden}
+\smallskip
+{\it Identification Team}
+\parindent=20pt
+\item{$\diamond$} Broke out customer identification functionality from an Erlang monolith into a separate Erlang service with cross-site replication. 
+\item{$\diamond$} Added support for new data models as required for new market launches 
+\item{$\diamond$} Migrated services from on-premise systems to AWS as part of a company-wide shift to the cloud.
+\parindent=0pt
+
+{\it Risk Team}
+\parindent=20pt
+\item{$\diamond$} Developed and maintained realtime risk assessment
+systems used by risk analysts to make credit and fraud decisions for online shoppers in Erlang and Java.
+\item{$\diamond$} Migrated from a risk decision engine inside an Erlang monolith to
+a Java-based third-party product in a zero-downtime, phased migration.
+\item{$\diamond$} Automated deployment tasks required for regulatory compliance, 
+allowing risk analysts to deploy automatically several times daily instead of once 
+weekly.
+\parindent=0pt
+
+{\it Finance Team}
+\parindent=20pt
+\item{$\diamond$} Wrote integrations with financial institutions in various markets to support local
+payment methods in Erlang.
+\item{$\diamond$} Refactored large parts of the legacy payment batch processing system to allow for parallel
+processing, providing significant speedups of nightly jobs. 
+\parindent=0pt
+
+
+%\item{$\diamond$} Collaborated with product managers to develop new
+%features on existing platforms or implementing new services as needed.
+%\item{$\diamond$} Lead small teams of developers for specific projects
+%features and coordinate with other teams to resolve dependencies.
+%\item{$\diamond$} Provide operational support, including
+%on-call duty.
+%\parindent=0pt
+
+\bigskip
+
+
+\jobheader{Doctoral Thesis}{2008—2014}
+{Department of Computer Science, University of Oxford}{Oxford, United Kingdom}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Conducted research into using fusion of structural recursion as an automated, optimising program
+transformation in Haskell. 
+\item{$\diamond$} Designed and implemented purely functional data
+structures and adapted fusion
+techniques for them. 
+\item{$\diamond$} Modelled fusion transformations in mathematical
+settings to prove correctness.  
+\item{$\diamond$} Analysed intermediate compiler outputs to investigate low-level implications of
+transformations on performance.
+\item{$\diamond$} Implemented a compiler feature that allowed for semi-automated fusion user-defined recursive data structures in the Utrecht Haskell Compiler.
+\parindent=0pt
+
+\bigskip
+
+%\jobheader{Teaching Assistant}{2010—2012}{Oxford University
+%Computing Laboratory}{Oxford, United Kingdom}
+%\smallskip
+%
+%\parindent=20pt
+%\item{$\diamond$} Provided one-on-one assistance to students as they
+%complete practicals in a lab.
+%\item{$\diamond$} Marked completed practical assignments and give feedback to students.
+%\item{$\diamond$} Assisted at Open Days and Access Days by providing a
+%practical session for interested students using the pedagogical
+%language GeomLab.
+%\item{$\diamond$} Taught classes consisting of 5-10 students to review
+%concepts discussed in lectures and provide feedback on problem
+%sheets.  
+%\item{$\diamond$} Courses taught: Compilers, Computational Linguistics, Functional Programming, 
+%Geometric Modelling, Imperative Programming, Principles of Programming Languages
+%\parindent=0pt
+
+%\bigskip
+\break
+
+\jobheader{Master's Dissertation}{2007—2008}
+{Department of Computer Science, University of Oxford}{Oxford, United Kingdom}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Designed and implemented a high-performance, Unicode-compliant string library
+in Haskell by applying stream fusion to byte array structures.
+\item{$\diamond$} Examined compiler core dumps to find and optimise
+low-level inefficiencies.
+\item{$\diamond$} Created a functional, high-level interface on top of
+hand-optimised code that exploited low-level memory management to achieve
+significant performance improvements over Haskell's built-in string type.
+\item{$\diamond$} Presented the results in a dissertation that earned a Distinction-level mark.
+\item{$\diamond$} This appeared as the initial version of the {\tt Data.Text} library, still maintained today.
+%\item{$\diamond$} Published the results and presented them at
+%Implementation and Application of Functional Languages (IFL) 2009.
+
+\bigskip
+
+\jobheader{Summer of Code Participant}{June 2007—August 2007}{Google Summer of Code}{}
+\medskip 
+
+\parindent=20pt
+\item{$\diamond$} Optimised Mlucas, a Lucas-Lehmer primality
+tester under the supervision of a mentor from Sun Microsystems,
+Inc. using OpenMP to create the (then) most scalable primality tester for 
+the Great Internet Mersenne Prime Search on Sun servers.  
+\parindent=0pt
+
+\bigskip
+
+\jobheader{Research Aid}{June 2006—August 2006}
+{United States Air Force Research Lab/Rome Research Site}{Rome, New York, United States}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Conducted machine translation research for the
+Information Exploitation division on building statistical models for limited domain 
+translations using small training sets
+\item{$\diamond$} Built a proof-of-concept in C\plusplus\ using the QT framework and open-source
+machine translation tools.
+%\item{$\diamond$} Evaluated research from a contracted company on
+%statistical machine translation and documented the results. 
+%\item{$\diamond$} Extended that research
+%by creating an integrated statistical machine translation application
+%with a graphical user interface in C\plusplus\ as a prototype.
+%\item{$\diamond$} Helped organise the âMilitary and Security
+%Applications of Evolutionary Computingâ workshop for the Genetic and
+%Evolutionary Computing Conference (GECCO) 2006.
+\parindent=0pt
+
+\bigskip
+
+\jobheader{Information Systems Intern}{June 2005—September
+2005}{Anheuser-Busch, Inc.}{Baldwinsville, New York, USA}
+\medskip
+
+\parindent=20pt
+\item{$\diamond$} Supported a 24/7/365 brewery as a member of the
+Information Systems department, supporting end-users and live process 
+control systems in a Microsoft environment.
+%\item{$\diamond$} Provided end-user support for software, hardware, and
+%network issues in production and office environments.  
+%\item{$\diamond$} Performed maintenance on live process control systems. 
+%\item{$\diamond$} Performed routine system maintenance on servers.  
+%\item{$\diamond$} Assisted in a plant-wide upgrade of
+%over 500 computers using remote administration and by managing
+%contracted workers for hardware replacement.
+\parindent=0pt
+
+\bigskip
+
+% %% References
+
+% \cvsection{References}
+
+% The following persons have submitted letters of references on my
+% behalf:
+
+% \smallskip
+
+% \settabs 2 \columns
+% \+ Ralf Hinze                         & Irina Voiculescu                        \cr
+% \+ Reader                             & Departmental Lecturer                   \cr
+% \+ Oxford Computing Laboratory        & Oxford Computing Laboratory             \cr
+% \+ Wolfson Building                   & Wolfson Building                        \cr
+% \+ Parks Road                         & Parks Road                              \cr
+% \+ Oxford                             & Oxford                                  \cr
+% \+ OX1 3QD                            & OX1 3QD                                 \cr
+% \+ +44 (0)1865 610 700                & +44 (0)1865 283 501                     \cr
+% \+ ralf.hinze@comlab.ox.ac.uk         & irina.voiculescu@comlab.ox.ac.uk        \cr
+
+% \bigskip
+
+%% Grants Awarded
+% \cvsection{Awards and Scholarships}
+% \line{University of Utrecht Short Stay Fellowship \hfill 2011}
+% \line{Syracuse University Dean's Scholarship \hfill 2004}
+% \line{American University President's Scholarship \hfill 2003}
+
+% \bigskip
+
+% %% Publications
+
+% \cvsection{Publications}
+
+% {\bf Conference Proceedings}
+
+% \hangindent=20pt 
+% \parindent=20pt
+% \item{1.} Ralf Hinze, Thomas Harper, and Daniel W. H. James. Theory
+% and Practice of Fusion. {\it Implementation and Application of
+% Functional Languages '10}. To Appear.
+
+% \smallskip
+
+% \item{2.} Thomas Harper. Stream fusion on Haskell Unicode strings. In
+% Marco MorazÃ¡n and Sven-Bodo Schulz, editors, {\it Implementation and
+% Application of Functional Languages '09}, Lecture Notes in Computer
+% Science, volume 6041, pages 125-140. Springer-Verlag, Berlin, 2011.
+
+
+% \medskip
+% \parindent=0pt
+% {\bf Technical Reports}
+% \parindent=20pt
+% \item{3.} Ralf Hinzeâ Thomas Harper and Daniel
+% W.H. James. Theory and Practice of Fusion. CS-RR-2011-01. Department of Computer Scienceâ
+% University of Oxford. 2011.
+% \parindent=0pt
+
+% \bigskip 
+
+%% Conference Presentations
+
+%% Professional Activities
+
+%% Professional Affiliations
+
+%% Teaching Interests
+
+%\cvsection{Hobbies and Interests}
+%
+%\parindent=20pt
+%\item{$\diamond$} Historical and comparative linguistics, foreign languages
+%\item{$\diamond$} Gymnastics, swimming, outdoor sports
+%\item{$\diamond$} Knitting, spinning
+%\parindent=0pt
+\bye
